@@ -1,0 +1,19 @@
+
+###
+GET {{baseUrl}}/comentarios/item/1
+Authorization: Bearer {{token}}
+
+###
+POST {{baseUrl}}/comentarios
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "texto": "Este é um ótimo item! Recomendo.",
+    "itemId": 1
+}
+
+###
+DELETE {{baseUrl}}/comentarios/1
+Authorization: Bearer {{token}}
+
